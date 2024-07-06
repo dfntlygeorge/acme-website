@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .section-min-height {
+    min-height: calc(100vh - 68px);
+  }
+
+  .toggle-btn {
+    @apply [&>div::after]:translate-y-0 [&>div::after]:rotate-45 [&>div::before]:translate-y-0 [&>div::before]:-rotate-45 [&>div]:rotate-[360deg] [&>div]:bg-transparent;
+  }
+
+  /* .toggle-btn > div::after {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .toggle-btn > div::before {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .toggle-btn > div {
+    background-color: transparent;
+  } */
+}
